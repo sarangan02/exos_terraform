@@ -1,0 +1,8 @@
+1. définition du fournisseur aws et la Région
+2. ami ubuntu utilisé
+3. Le type d'instance EC2, ici "t2.micro"
+4. Le nom de la paire de clés EC2 à utiliser pour accéder à l'instance "Keypair"
+5. provisioner "remote-exec" = nous permet d'exécuter des commandes à distance sur l'instance EC2 pour installer Apache et déployer une page d'accueil.
+6. On crée un groupe de sécurité AWS qui autorise le trafic TCP sur le port 80 (HTTP) et le port 22 (SSH). Le trafic est autorisé depuis n'importe quelle adresse IP (0.0.0.0/0).
+7. terraform init
+8. terraform apply
